@@ -11,7 +11,7 @@ class KNN():
         self.y_train = y
         return self
     
-    def _compute_distance(self, a, b):
+    def distance(self, a, b):
         squared_sum = 0
         for index in range(len(a)):
             squared_sum += (a[index] - b[index]) ** 2
@@ -20,7 +20,7 @@ class KNN():
     def _predict_one(self, x):
         distances = []
         for index in range(len(self.X_train)):
-            distance = self._compute_distance(x, self.X_train[index])
+            distance = self.distance(x, self.X_train[index])
             label = self.y_train.iloc[index]
             distances.append((distance, label))
         
