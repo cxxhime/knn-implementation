@@ -77,7 +77,7 @@ class KNN():
     
     
 if __name__ == "__main__":
-    X, y, scaler = load_normalized_data(file_path="data/Bien-être.csv")
+    X, y, scaler = load_normalized_data(file_path="data/bienetre.csv")
 
     train_size = int(len(X) * 0.8)
 

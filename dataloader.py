@@ -39,4 +39,4 @@ def load_normalized_data(file_path, target_col="target"):
 
 
 if __name__ == "__main__":
-	X_normalized, Y, standard_scaler_object = load_normalized_data(file_path="data/Bien-être.csv")
+	X_normalized, Y, standard_scaler_object = load_normalized_data(file_path="data/bienetre.csv")
