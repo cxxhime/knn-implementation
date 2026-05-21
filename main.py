@@ -17,7 +17,7 @@ class KNN():
             squared_sum += (a[index] - b[index]) ** 2
         return squared_sum ** 0.5
 
-    def _predict_one(self, x):
+    def predict_one(self, x):
         distances = []
         for index in range(len(self.X_train)):
             distance = self.distance(x, self.X_train[index])
