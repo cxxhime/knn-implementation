@@ -44,7 +44,7 @@ class KNN():
     def predict(self, X):
         predictions = []
         for x in X:
-            prediction = self._predict_one(x)
+            prediction = self.predict_one(x)
             predictions.append(prediction)
         return predictions
     
